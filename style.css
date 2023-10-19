@@ -60,12 +60,21 @@ main {
   justify-content: space-between;
 }
 
-main p {
+p {
   font-size: 14px;
   font-weight: 400px;
   line-height: 28px;
   color: rgba(125, 121, 135, 1);
   font-family: "Open Sans", sans-serif;
+}
+
+p a {
+  color: rgba(31, 21, 52, 0.5);
+}
+
+p a:hover {
+  font-weight: bold;
+  color: rgba(31, 21, 52, 1);
 }
 
 h1 {
