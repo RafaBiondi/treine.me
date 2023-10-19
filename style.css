@@ -1,19 +1,35 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0),
+    rgba(227, 255, 248, 0.38)
+  );
+  min-height: 100vh;
 }
 
 .page {
-  margin: 65px 120px;
-  border: 1px solid blue;
+  margin: 0 auto;
+  padding-top: 65px;
+  width: 1000px;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 55px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ol {
@@ -24,10 +40,32 @@ ol {
   padding: 0;
 }
 
+ol,
+h1 {
+  font-family: "Mulish", sans-serif;
+}
+
+ol li a {
+  color: rgba(31, 21, 52, 0.5);
+}
+
+ol li a:hover {
+  font-weight: bold;
+  color: rgba(31, 21, 52, 1);
+}
+
 main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+main p {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 28px;
+  color: rgba(125, 121, 135, 1);
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -35,4 +73,41 @@ h1 {
   font-weight: 400;
   font-size: 49px;
   width: 490px;
+  color: rgba(0, 0, 0, 1);
+  line-height: 56px;
+}
+
+h1 span {
+  font-weight: 700;
+  color: rgba(137, 197, 204, 1);
+}
+
+button {
+  background-color: rgba(105, 185, 157, 1);
+  color: rgba(249, 249, 249, 1);
+  font-family: "DM Sans", sans-serif;
+  width: 179px;
+  height: 56px;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.green-balls {
+  right: 0;
+  bottom: 0;
+  position: fixed;
 }
